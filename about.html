@@ -4,32 +4,97 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Daniel Wang's Website</title>
-
+    <link rel="stylesheet" href="assets/stylesheets/styles.css">
 </head>
 <body id="top">
     <header> 
-        <nav>
-            <ul>
-                <a href="index.html"><li> Home </li></a>
-                <a href="about.html"><li> About </li></a><!-- timeline here -->
-                <a href="travel.html"><li> Travel</li></a>
-                <li> Goals</li>
-            </ul>
-        </nav>
-        <button> Contact</button>
+        <div class="global-nav">
+            <nav>
+                <ul>
+                    <a href="index.html"><li> Home </li></a>
+                    <a href="about.html"><li> About </li></a><!-- timeline here -->
+                    <a href="travel.html"><li> Travel</li></a>
+                    <li> Goals</li>
+                </ul>
+            </nav>
+            <button role="button"> Contact</button>
+        </div>
     </header>
     <hr>
-    <h1> About </h1>
-    <section>
-        <h2> Coursework </h2> <!-- timeline of Fall Winter 2025 coursework... rest coming soon-->
-    </section>
-    <section> 
+    <div class="submenu">
+        <ul>
+           <a href="#coursework"><li>Coursework</li></a>
+           <a href="#activities"><li>Activities</li></a>
+           <a href="#pictures"><li>Pictures</li></a>
+        </ul>
+    </div>
+    <h1> About Me </h1>
+    
+    <section id="activities"> 
         <h2> Activities </h2>
+        <ul>
+            <li>Soccer</li>
+            <li>Cello</li>
+        </ul>
     </section>
-    <section> 
-        <h2> Pictures! </h2>
+    
+    <section id="pictures"> 
+        <h2> Pictures </h2>
     </section>
         
+    <section id="coursework">
+        <h2> Coursework </h2> <!-- timeline of Fall Winter 2025 coursework... rest coming soon-->
+        <h3> Completed</h3>
+        <ul> 
+            <li>EECS 280</li>
+            <li>EECS 203</li>
+        </ul>
+        <h3>In Progress</h3>
+        <ul><li>EECS 281</li></ul>
+        <h3>Coming soon...</h4>
+        <ul>
+            <li>EECS 370</li>
+            <li>EECS 376</li>
+        </ul>
+    </section>
+
+    <div class="timeline">
+        <div class="container left-container">
+            <div class="textbox">
+                <h3>EECS 280</h3>
+                <img src="assets/images/lobster-white.png" alt="eecs280logo">
+                <small>Fall 2024</small>
+                <p>Computer science fundamentals, with programming in C++. Build a satistical analysis tool, 
+                    an image processing program, a Euchre card game, a machine learning algorithm, and a text editor. 
+                    Analyze and implement foundational data structures.</p>
+            </div>
+        </div>
+
+        <div class="container right-container">
+            <div class="textbox">
+                <h3>EECS 203</h3>
+                <img src="assets/images/eecs203logo.png" alt="eecs203logo">
+                <small>Fall 2024</small>
+                <p>Introduction to the mathematical foundations of computer science. Topics covered 
+                include: prepositional and predicate logic, set theory, function and relations, 
+                growth of functions and asymptotic notation, introduction to algorithms, elementary combinatorics,
+                and graph theory, and discrete probability</p>
+            </div>
+        </div>
+
+        <div class="container left-container">
+            <div class="textbox">
+                <h3>EECS 281</h3>
+                <small>Winter 2025</small>
+                <p>Fundamental data structures including lists, stacks, queues, priority queues, 
+                hash tables, binary trees, search trees, balanced, trees, and graphs; searching and 
+                sorting algorithms; recursive algorithms; basic graph algorithms; introduction to 
+                greedy algorithms and divide and conquer strategy.</p>
+            </div>
+        </div>
+
+    </div>
+
     <footer>
         <p>Made by Daniel Wang &copy 2024</p>
         <nav>
