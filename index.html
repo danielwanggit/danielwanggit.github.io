@@ -8,8 +8,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600&family=Cormorant:ital,wght@0,300..700;1,300..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
-      rel="stylesheet"
-    />
+      rel="stylesheet"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="assets/stylesheets/styles.css" />
   </head>
   <body id="top">
@@ -17,15 +17,14 @@
       <div class="nav-container">
         <nav>
           <ul class="desktop-nav">
-            <li><a href="index.html" class="link-logo"></a></li>
+            <!-- <li><a href="index.html" class="link-logo"></a></li> --> 
+            <li><a href="#" class="logo"><img src="assets/images/dTie-removebg-preview.png" alt="logo"></a></li>
             <li><a href="index.html">Home </a></li>
             <li><a href="about.html">About </a></li>
             <!-- timeline here -->
             <li><a href="travel.html">Travel</a></li>
             <!-- Maybe add: What I'm Reading -->
             <li><a href="#">Books</a></li>
-            <li><a href="#" class="link-search"></a></li>
-            <li><button>Contact Me</button></li>
           </ul>
         </nav>
         <!-- end of nav menu items-->
@@ -36,15 +35,29 @@
       <img src="assets/images/unnamed.jpg" height="250" alt="Image of me" />
     </header>
 
-    <footer>
-      <p>Made by Daniel Wang &copy 2024</p>
-      <nav>
-        <a href="index.html"><li>Home</li></a>
-        <a href="about.html"><li>About</li></a
-        ><!-- timeline here -->
-        <a href="travel.html"><li>Travel</li></a>
-        <li>Goals</li>
-      </nav>
+    <footer class="global-footer">
+      <div class="footer-container">
+        <div class="footer-nav"> 
+          <nav>
+            <ul class="footer-nav">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="travel.html">Travel</a></li>
+              <li><a href="#">Books</a></li>
+            </ul>
+          </nav>
+        </div>
+        <div class="socials-section">
+          <p class="contact-label">Find me elsewhere:</p>
+          <div class="socials-container">
+            <a href="https://www.linkedin.com/in/danielwanng/"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="https://github.com/danielwanggit"><i class="fa-brands fa-github"></i></a>
+            <a href="mailto:dxnny@umich.edu" class="email-button"><i class="fa-solid fa-envelope"></i></a>
+          </div>
+      </div>
+      
+      </div>
+      <div class="footer-bottom"><p> Made by Daniel Wang &copy 2024</p></div>
     </footer>
   </body>
 </html>
