@@ -7,9 +7,16 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600&family=Cormorant:ital,wght@0,300..700;1,300..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
-      rel="stylesheet"/>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700;800&family=Cormorant:ital,wght@0,300..700;1,300..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <link rel="stylesheet" href="assets/stylesheets/styles.css" />
   </head>
   <body id="top">
@@ -17,8 +24,12 @@
       <div class="nav-container">
         <nav>
           <ul class="desktop-nav">
-            <!-- <li><a href="index.html" class="link-logo"></a></li> --> 
-            <li><a href="#" class="logo"><img src="assets/images/dTie-removebg-preview.png" alt="logo"></a></li>
+            <!-- <li><a href="index.html" class="link-logo"></a></li> -->
+            <li>
+              <a href="#" class="logo"
+                ><img src="assets/images/dTie-removebg-preview.png" alt="logo"
+              /></a>
+            </li>
             <li><a href="index.html">Home </a></li>
             <li><a href="about.html">About </a></li>
             <!-- timeline here -->
@@ -29,17 +40,82 @@
         </nav>
         <!-- end of nav menu items-->
       </div>
-
-      <h1>Daniel Wang</h1>
-      <p>Studying Computer Science at the University of Michigan - Ann Arbor</p>
-      <img src="assets/images/unnamed.jpg" height="250" alt="Image of me" />
     </header>
+
+    <main>
+      <section class="welcome">
+        <div class="inner-column">
+          <div class="two-panel">
+            <div class="welcome-text">
+              <h1 class="loud-intro">Hi! I'm Daniel</h1>
+              <p class="calm-intro">
+                I'm a student from Dallas, Texas studying Computer Science at
+                the University of Michigan, Ann Arbor
+              </p>
+            </div>
+            <div class="image">
+              <img src="assets/images/unnamed.jpg" height="250" alt="Image of me"/>
+            </div>
+          </div>
+        </div>
+
+          <div class="scroll">
+            <div><p>Scroll for more!</p></div>
+            <div>
+              <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd">
+              <path d="M11 21.883l-6.235-7.527-.765.644 7.521 9 7.479-9-.764-.645-6.236 7.529v-21.884h-1v21.883z"/>
+              </svg>
+            </div>
+        </div>
+      </section>
+
+      <section class="display1 coursework">
+        <div class="inner-column">
+          <div class="two-panel">
+            <div class="title-descriptor">
+              <h2>Coursework</h2>
+              <p> EECS courses I've completed at the University of Michigan</p>
+            </div>
+            <div class="attributes">
+              <ul>
+                <li>Programming and Intro Data Structures</li>
+                <li> Discrete Math</li>
+                <li> Data Structures and Algorithms</li>
+                <li> Intro to Computer Organization</li>
+                <li> Foundations of Computer Science</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="display1 skills">
+        <div class="inner-column">
+          <div class="two-panel">
+            
+            <div class="attributes">
+            <ul>
+              <li>C++</li>
+              <li>HTML/CSS</li>
+              <li>Java</li>
+              <li>Git/Github</li>
+              <li>VSCode</li>
+            </ul>
+            </div>
+            <div class="title-descriptor">
+              <h2>Skills</h2>
+              <p> Programming Languages, Tools, etc...</p>
+            </div>
+        </div>
+      </section>
+    </main>
 
     <footer class="global-footer">
       <div class="footer-container">
-        <div class="footer-nav"> 
+        <div class="footer-nav">
+          <p>Navigate</p>
           <nav>
-            <ul class="footer-nav">
+            <ul class="footer-nav-list">
               <li><a href="index.html">Home</a></li>
               <li><a href="about.html">About</a></li>
               <li><a href="travel.html">Travel</a></li>
@@ -48,16 +124,27 @@
           </nav>
         </div>
         <div class="socials-section">
-          <p class="contact-label">Find me elsewhere:</p>
+          <p class="contact-label">Find me elsewhere</p>
           <div class="socials-container">
-            <a href="https://www.linkedin.com/in/danielwanng/"><i class="fa-brands fa-linkedin"></i></a>
-            <a href="https://github.com/danielwanggit"><i class="fa-brands fa-github"></i></a>
-            <a href="mailto:dxnny@umich.edu" class="email-button"><i class="fa-solid fa-envelope"></i></a>
+            <a href="https://www.linkedin.com/in/danielwanng/"
+              ><i class="fa-brands fa-linkedin"></i
+            ></a>
+            <a href="https://github.com/danielwanggit"
+              ><i class="fa-brands fa-github"></i
+            ></a>
+            <a href="mailto:dxnny@umich.edu" class="email-button"
+              ><i class="fa-solid fa-envelope"></i
+            ></a>
           </div>
+        </div>
+        <div class="footer-credits">
+          <p class="made-by">Presented by</p>
+          <a href="#" class="logo"
+            ><img src="assets/images/dTie-removebg-preview.png" alt="logo"
+          /></a>
+          <p>Daniel Wang &copy 2024</p>
+        </div>
       </div>
-      
-      </div>
-      <div class="footer-bottom"><p> Made by Daniel Wang &copy 2024</p></div>
     </footer>
   </body>
 </html>
