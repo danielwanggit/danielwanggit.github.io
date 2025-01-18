@@ -10,6 +10,8 @@
       href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700;800&family=Cormorant:ital,wght@0,300..700;1,300..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
       rel="stylesheet"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
@@ -21,25 +23,28 @@
   </head>
   <body id="top">
     <header>
-      <div class="nav-container">
-        <nav>
-          <ul class="desktop-nav">
-            <!-- <li><a href="index.html" class="link-logo"></a></li> -->
-            <li>
-              <a href="#" class="logo"
-                ><img src="assets/images/dTie-removebg-preview.png" alt="logo"
-              /></a>
-            </li>
-            <li><a href="index.html">Home </a></li>
-            <li><a href="about.html">About </a></li>
-            <!-- timeline here -->
-            <li><a href="travel.html">Travel</a></li>
-            <!-- Maybe add: What I'm Reading -->
-            <li><a href="#">Books</a></li>
-          </ul>
-        </nav>
-        <!-- end of nav menu items-->
-      </div>
+      <div class="nav-wrapper">
+        <div class="nav-container">
+          <div class="logo">
+            <a href="#" class="logo"
+                    ><img src="assets/images/dTie-removebg-preview.png" alt="logo"
+                  /></a>
+          </div>
+          <div class="nav-bar">
+            <nav>
+              <ul class="desktop-nav">
+                <li><a href="index.html">Home </a></li>
+                <li><a href="about.html">About </a></li>
+                <!-- timeline here -->
+                <li><a href="travel.html">Travel</a></li>
+                <!-- Maybe add: What I'm Reading -->
+                <li><a href="#">Books</a></li>
+              </ul>
+            </nav>
+          </div>
+          <!-- end of nav menu items-->
+        </div>
+    </div>
     </header>
 
     <main>
@@ -49,8 +54,8 @@
             <div class="welcome-text">
               <h1 class="loud-intro">Hi! I'm Daniel</h1>
               <p class="calm-intro">
-                I'm a student from Dallas, Texas studying Computer Science at
-                the University of Michigan, Ann Arbor
+                 Student from Dallas, Texas studying Computer Science at
+                the University of Michigan, Ann Arbor.
               </p>
             </div>
             <div class="image">
@@ -60,7 +65,7 @@
         </div>
 
           <div class="scroll">
-            <div><p>Scroll for more!</p></div>
+            <div><p>scroll for more!</p></div>
             <div>
               <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd">
               <path d="M11 21.883l-6.235-7.527-.765.644 7.521 9 7.479-9-.764-.645-6.236 7.529v-21.884h-1v21.883z"/>
@@ -69,44 +74,44 @@
         </div>
       </section>
 
-      <section class="display1 coursework">
-        <div class="inner-column">
-          <div class="two-panel">
-            <div class="title-descriptor">
-              <h2>Coursework</h2>
-              <p> EECS courses I've completed at the University of Michigan</p>
-            </div>
-            <div class="attributes">
-              <ul class="attributes-list">
-                <li><a href="#"">Programming & Intro Data Structures</a></li>
-                <li> <a href="#"">Discrete Math</a></li>
-                <li> <a href="#"">Data Structures and Algorithms</a></li>
-                <li> <a id="uncomplete" href="#"">Intro to Computer Organization</a></li>
-                <li> <a id="uncomplete"href="#"">Foundations of Computer Science</a></li>
-              </ul>
-            </div>
+      <section class='skills'>
+        <div class="attributes-wrapper">
+          <h2>Skills</h2>
+          <div class="projects-wrapper">
+            <div class="card">hello</div>
+            <div class="card">hello</div>
+            <div class="card">hello</div>
+            <div class="card">hello</div>
+            <div class="card">hello</div>
           </div>
+
         </div>
+
       </section>
 
-      <section class="display1 skills">
-        <div class="inner-column">
-          <div class="two-panel">
-            <div class="attributes">
-            <ul class='attributes-list'>
-              <li><a href="#"">C++</a></li>
-              <li><a href="#"">HTML/CSS</a></li>
-              <li><a href="#"">Java</a></li>
-              <li><a href="#"">Git/Github</a></li>
-              <li><a href="#"">VSCode</a></li>
-            </ul>
+      <section class="projects">
+          <h2>Projects</h2>
+          <div class="projects-wrapper">
+            <div class="card">
+              <div class="card-inner">
+                <div class="card-front"><img src="assets/images/responsif-seo-website-svgrepo-com.svg"></div>
+                <div class="card-back">
+                    <h2>Personal website</h1>
+                    <p>A website all about me, built using HTML and CSS<p>
+                </div>
+              </div>
             </div>
-            <div class="title-descriptor">
-              <h2>Skills</h2>
-              <p> Programming Languages, Tools, etc...</p>
+            <div class="card">
+              <div class="card-inner">
+                <div class="card-front"><p>Coming Soon...</p></div>
+                <div class="card-back">
+                    <p>More projects underway!<p>
+                </div>
+              </div>
             </div>
-        </div>
+          </div>
       </section>
+
     </main>
 
     <footer class="global-footer">
